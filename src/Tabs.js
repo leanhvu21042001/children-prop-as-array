@@ -1,7 +1,6 @@
 const UL = ({ className, children, ...props }) => {
-  console.log();
   return (
-    <ul>
+    <ul {...props}>
       {!!children.length && children.map((content) => <li>{content}</li>)}
     </ul>
   );
